@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  height: 13000px;
+}
+body::-webkit-scrollbar {
+  width: 0em!important;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(241, 32, 32, 0.3);
+  width: 0em!important;
+
+}
+ body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  width: 0em!important;
+
+}
+
+.car-pos{
+  display: block;
+  position: fixed;
+  top: 5.5%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  opacity: 0
+}
+
+.car {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+  height: 200%;
+  width: 200%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25.2%;
+  max-height: 7.2%;
+}
+.side-car {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+}
+.back-tyre {
+  position: absolute;
+  top: 5.9rem;
+  left: 12.5rem;
+  max-width: 50%;
+}
+.front-tyre {
+  position: absolute;
+  top: 5.9rem;
+  left: -1.3rem;
+  max-width: 50%;
+}
+
+.circle {
+	position:fixed;
+	border-radius: 50%;
+	width:30px;
+	height:30px;
+	display: none;
+  animation: scaleIn 3s  cubic-bezier(.36, .11, .89, .32);
+	animation-fill-mode: forwards !important;
+	background-color: #208e9e;
+  animation-iteration-count: infinite;
+  }
+
+.circle1 {
+    top: 12rem;
+    left: 19rem;
+ }
+
+ .circle2{
+  top: 12rem;
+  right: 19rem;
+}
+
+.circle3 {
+  bottom: 11rem;
+  left: 19rem;
+}
+
+.circle4 {
+  bottom: 11rem;
+  right: 19rem;
+}
+
+@keyframes scaleIn {
+    0% {
+      transform: scale(.5, .5);
+      opacity: 1;
+    }
+    25%{
+      transform: scale(1, 1);
+      opacity: 0.8;
+    }
+    50%{
+      transform: scale(5, 5);
+      opacity: 0.5;
+    }
+    75%{
+      transform: scale(5, 5);
+      opacity: 0.2;
+    }
+    100%{
+      transform: scale(15, 15);
+      opacity: 0.1;
+    }
+}
+
+/* media queries for 720px */
+@media (max-width: 1280px){
+
+  .back-tyre {
+    position: absolute;
+    top: 5rem;
+    left: 10.6rem;
+    max-width: 50%;
+  }
+  .front-tyre {
+    position: absolute;
+    top: 5rem;
+    left: -1.1rem;
+    max-width: 50%;
+  }
+  .circle1 {
+    top: 11rem;
+    left: 16rem;
+ }
+
+ .circle2{
+  top: 11rem;
+  right: 16rem;
+}
+
+  .circle3 {
+    bottom: 15rem;
+    left: 16rem;
+  }
+
+  .circle4 {
+    bottom: 15rem;
+    right: 16rem;
+  }
+}
+
+/* media queries for 1024px */
+@media (max-width: 1080px){
+
+  body{
+    height: 15000px;
+  }
+
+  .back-tyre {
+    position: absolute;
+    top: 3.8rem;
+    left: 8.8rem;
+    max-width: 50%;
+  }
+  .front-tyre {
+    position: absolute;
+    top: 3.8rem;
+    left: -0.8rem;
+    max-width: 50%;
+  }
+  .circle1 {
+    top: 15rem;
+    left: 12rem;
+ }
+
+ .circle2{
+  top: 15rem;
+  right: 12rem;
+}
+
+  .circle3 {
+    bottom: 112rem;
+    left: 12rem;
+  }
+
+  .circle4 {
+    bottom: 112rem;
+    right: 12rem;
+  }
+}
+
+/* media queries for 1024px */
+@media (max-width: 1024px){
+
+  .back-tyre {
+    position: absolute;
+    top: 3.6rem;
+    left: 8.3rem;
+    max-width: 50%;
+  }
+  .front-tyre {
+    position: absolute;
+    top: 3.6rem;
+    left: -0.8rem;
+    max-width: 50%;
+  }
+  .circle1 {
+    top: 11rem;
+    left: 12rem;
+ }
+
+ .circle2{
+  top: 11rem;
+  right: 12rem;
+}
+
+  .circle3 {
+    bottom: 58rem;
+    left: 12rem;
+  }
+
+  .circle4 {
+    bottom: 58rem;
+    right: 12rem;
+  }
+}
+
+/* media queries for 768px */
+@media (max-width: 768px){
+
+  .back-tyre {
+    position: absolute;
+    top: 2.95rem;
+    left: 6.3rem;
+    max-width: 50%;
+  }
+  .front-tyre {
+    position: absolute;
+    top: 2.96rem;
+    left: -0.7rem;
+    max-width: 50%;
+  }
+  .circle1 {
+    top: 19rem;
+    left: 9rem;
+ }
+
+ .circle2{
+  top: 19rem;
+  right: 9rem;
+}
+
+  .circle3 {
+    bottom: 54.5rem;
+    left: 9rem;
+  }
+
+  .circle4 {
+    bottom: 54.5rem;
+    right: 9rem;
+  }
+}
+
+/* media queries for 540px */
+@media (max-width: 540px){
+
+  .back-tyre {
+    position: absolute;
+    top: 2.1rem;
+    left: 4.45rem;
+    max-width: 50%;
+  }
+  .front-tyre {
+    position: absolute;
+    top: 2.1rem;
+    left: -0.5rem;
+    max-width: 50%;
+  }
+  .circle1 {
+    top: 13rem;
+    left: 6rem;
+ }
+
+ .circle2{
+  top: 13rem;
+  right: 6rem;
+}
+
+  .circle3 {
+    bottom: 38rem;
+    left: 6rem;
+  }
+
+  .circle4 {
+    bottom: 38rem;
+    right: 6rem;
+  }
+}
+
+
+/* media queries for 540px */
+@media (max-width: 340px){
+
+  .back-tyre {
+    position: absolute;
+    top: 1.3rem;
+    left: 2.8rem;
+    max-width: 50%;
+  }
+  .front-tyre {
+    position: absolute;
+    top: 1.3rem;
+    left: -0.3rem;
+    max-width: 50%;
+  }
+  .circle1 {
+    top: 8.5rem;
+    left: 3.7rem;
+ }
+
+ .circle2{
+  top: 8.5rem;
+  right: 3.7rem;
+}
+
+  .circle3 {
+    bottom: 34rem;
+    left: 3.5rem;
+  }
+
+  .circle4 {
+    bottom: 34rem;
+    right: 3.5rem;
+  }
+}
+
+/* media queries for 540px */
+@media (max-width: 320px){
+
+  .back-tyre {
+    position: absolute;
+    top: 1.18rem;
+    left: 2.6rem;
+    max-width: 50%;
+  }
+  .front-tyre {
+    position: absolute;
+    top: 1.18rem;
+    left: -0.3rem;
+    max-width: 50%;
+  }
+  .circle1 {
+    top: 7.8rem;
+    left: 3.6rem;
+ }
+
+ .circle2{
+  top: 7.8rem;
+  right: 3.6rem;
+}
+
+  .circle3 {
+    bottom: 30.5rem;
+    left: 3.5rem;
+  }
+
+  .circle4 {
+    bottom: 30.5rem;
+    right: 3.5rem;
+  }
+}
+
+
