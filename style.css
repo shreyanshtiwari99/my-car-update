@@ -78,7 +78,7 @@ body::-webkit-scrollbar-track {
   animation: scaleIn 3s  cubic-bezier(.36, .11, .89, .32);
 	animation-fill-mode: forwards !important;
 	background-color: #208e9e;
-  animation-iteration-count: infinite;
+  /* animation-iteration-count: infinite; */
   }
 
 .circle1 {
